@@ -37,8 +37,8 @@ bot = Client(
 photo = "https://i.postimg.cc/dVY9nL63/IMG-20250426-130510-655.jpg"
 cpphoto = "https://i.postimg.cc/dVY9nL63/IMG-20250426-130510-655.jpg"
 appxzip = "https://i.postimg.cc/dVY9nL63/IMG-20250426-130510-655.jpg"
-my_name = "🅂🄿🄸🄳🅈"
-CHANNEL_ID = "-1002607772171"##change it with your channel 🆔 
+my_name = "ABHAY_MOOND"
+CHANNEL_ID = "-1002584005816"##change it with your channel 🆔 
 
 cookies_file_path = os.getenv("COOKIES_FILE_PATH", "youtube_cookies.txt")
 
@@ -47,7 +47,7 @@ routes = web.RouteTableDef()
 
 @routes.get("/", allow_head=True)
 async def root_route_handler(request):
-    return web.json_response("your_render_url") ## change it with your host url
+    return web.json_response("https://txt-to-video-2-ywud.onrender.com") ## change it with your host url
 
 async def web_server():
     web_app = web.Application(client_max_size=30000000)
@@ -152,7 +152,7 @@ async def start(client: Client, msg: Message):
     await asyncio.sleep(1)
     await start_message.edit_text(
         Data.START.format(msg.from_user.mention) +
-        "Checking status Ok... Command Nhi Bataunga **Bot Made BY 🅂🄿🄸🄳🅈™👨🏻‍💻**🔍\n\n"
+        "Checking status Ok... Command Nhi Bataunga **Bot Made BY Abhay_moond 👨🏻‍💻**🔍\n\n"
         "Progress:[🟩🟩🟩🟩🟩🟩🟩🟩🟩] 100%\n\n"
     )
 
